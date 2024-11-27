@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Domek w górach"
+        android:textSize="40dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/obraz" />
+
+    <LinearLayout
+        android:id="@+id/main2"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:background="#B53FB3"
+        android:backgroundTint="#6173A0"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/polub"
+            android:layout_width="135dp"
+            android:layout_height="match_parent"
+            android:background="#008080"
+            android:text="POLUB" />
+
+        <Button
+            android:id="@+id/usun"
+            android:layout_width="135dp"
+            android:layout_height="match_parent"
+            android:background="#008080"
+            android:text="USUŃ" />
+
+        <Button
+            android:id="@+id/zapisz"
+            android:layout_width="135dp"
+            android:layout_height="match_parent"
+            android:background="#008080"
+            android:text="zapisz" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/polubienia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="0 polubien" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#686767" />
+
+    <TextView
+        android:id="@+id/opis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Opis"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/opis_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Odwedź komfortowy domek w Sudetach,blisko do szlaków turystycznych"
+        android:textColor="#857C7C" />
+
+</LinearLayout>
